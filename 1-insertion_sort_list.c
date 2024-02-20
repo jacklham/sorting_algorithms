@@ -3,13 +3,13 @@
 /**
  * insertion_sort_list - sorts a doubly linked list of integers,
  * in ascending order using the Insertion sort algorithm
- * @list: the list
+ * @list: list
 **/
 
 void insertion_sort_list(listint_t **list)
 {
 	listint_t *node, *temp, *next, *temp_next, *temp_prev;
-	int i = 0;
+	int l = 0;
 
 	if (list == NULL || (*list)->next == NULL)
 		return;
@@ -45,6 +45,6 @@ void insertion_sort_list(listint_t **list)
 			print_list(*list);
 		}
 		node = next;
-		i++;
+		l++;
 	}
 }
