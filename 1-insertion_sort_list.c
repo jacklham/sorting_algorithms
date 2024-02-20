@@ -9,7 +9,7 @@
 void insertion_sort_list(listint_t **list)
 {
 	listint_t *node, *temp, *next, *temp_next, *temp_prev;
-	int l = 0;
+	int ma = 0;
 
 	if (list == NULL || (*list)->next == NULL)
 		return;
@@ -45,6 +45,6 @@ void insertion_sort_list(listint_t **list)
 			print_list(*list);
 		}
 		node = next;
-		l++;
+		ma++;
 	}
 }
